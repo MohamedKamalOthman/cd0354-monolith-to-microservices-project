@@ -22,14 +22,7 @@ spec:
         volumeMounts:
         - name: aws-secret
           mountPath: "/root/.aws/"
-          readOnly: true 
-        resources:
-          requests:
-            memory: "250Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"   
+          readOnly: true  
         env:
         - name: URL
           valueFrom:
