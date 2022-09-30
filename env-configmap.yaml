@@ -1,8 +1,8 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  POSTGRESS_HOST: cdr.czn1hivtal5z.us-east-1.rds.amazonaws.com
-  POSTGRESS_DB: postgres
+  POSTGRES_HOST: cdr.czn1hivtal5z.us-east-1.rds.amazonaws.com
+  POSTGRES_DB: postgres
   AWS_BUCKET: my-429358705641-bucket
   AWS_PROFILE: default
   AWS_REGION: us-east-1
