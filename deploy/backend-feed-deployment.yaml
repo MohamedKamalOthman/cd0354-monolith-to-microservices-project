@@ -19,6 +19,8 @@ spec:
       - name: backend-feed
         image: mohamedkamal91/udagram-api-feed:v1
         imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
         volumeMounts:
         - name: aws-secret
           mountPath: "/root/.aws/"
@@ -49,6 +51,16 @@ spec:
             configMapKeyRef:
               name: env-config
               key: AWS_BUCKET  
+        - name: AWS_REGION
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: AWS_REGION
+        - name: AWS_PROFILE
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: AWS_PROFILE
         - name: POSTGRES_PASSWORD
           valueFrom:
             secretKeyRef:
