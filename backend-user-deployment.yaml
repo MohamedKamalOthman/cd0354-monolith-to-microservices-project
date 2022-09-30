@@ -39,6 +39,11 @@ spec:
             configMapKeyRef:
               name: env-config
               key: POSTGRESS_HOST
+        - name: AWS_BUCKET
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: AWS_BUCKET
         - name: POSTGRESS_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -48,6 +53,6 @@ spec:
           valueFrom:
             secretKeyRef:
               name: env-secret
-              key: POSTGRESS_USERNAME
+              key: POSTGRESS_USERNAME              
 
 
