@@ -22,4 +22,4 @@ after_success:
   - docker push mohamedkamal91/reverseproxy:v1
   - docker push mohamedkamal91/udagram-api-user:v1
   - docker push mohamedkamal91/udagram-api-feed:v1
-  - docker push mohamedkamal91/udagram-frontend:v1
+  - docker push mohamedkamal91/udagram-frontend:v2
