@@ -19,6 +19,13 @@ spec:
       - name: backend-feed
         image: mohamedkamal91/udagram-api-feed:v1
         imagePullPolicy: Always
+        resources:
+          requests:
+            memory: "4000Mi"
+            cpu: "250m"
+          limits:
+            memory: "5000Mi"
+            cpu: "500m"  
         ports:
         - containerPort: 8080
         volumeMounts:
