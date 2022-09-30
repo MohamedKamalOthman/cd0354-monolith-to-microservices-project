@@ -17,7 +17,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: backend-user
-        image: mohamedkamal91/udagram-api-user:v1
+        image: mohamedkamal91/udagram-api-user:v2
         env:
         - name: URL
           valueFrom:

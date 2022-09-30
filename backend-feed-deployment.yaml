@@ -17,7 +17,7 @@ spec:
       restartPolicy: Always
       containers:
       - name: backend-feed
-        image: mohamedkamal91/udagram-api-feed:v1
+        image: mohamedkamal91/udagram-api-feed:v2
         imagePullPolicy: Always
         volumeMounts:
         - name: aws-secret
