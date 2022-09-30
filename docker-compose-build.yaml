@@ -7,12 +7,12 @@ services:
   backend_user:
     build:
       context: ./udagram-api-user
-    image: mohamedkamal91/udagram-api-user:v2
+    image: mohamedkamal91/udagram-api-user:v3
   backend_feed:
     build:
       context: ./udagram-api-feed
-    image: mohamedkamal91/udagram-api-feed:v2
+    image: mohamedkamal91/udagram-api-feed:v3
   frontend:
     build:
       context: ./udagram-frontend
-    image: mohamedkamal91/udagram-frontend:v2
+    image: mohamedkamal91/udagram-frontend:v3
